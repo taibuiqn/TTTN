@@ -1,0 +1,21 @@
+Tiến độ làm việc thực tế:
+
+1/7/2018 - 9/7/2018 : làm được khoảng 15% đồ án TTTN(Thực Tập Tốt Nghiệp)
+
+Với các mốc :
+ 
+- 5%  : Tìm hiểu nghiệp vụ, tìm hiểu framework React-native, cài đặt môi trường.
+- 10% : Phân tích thiết kế kiến trúc, phác thảo giao diện theo chức năng của ứng dụng nhằm phục vụ khách hàng.
+- 20% : Xây dựng cơ sở dữ liệu trên SQLyog.
+- 30% : Thiết kế giao diện ứng dụng trên thiết bị mobile( có thể dùng máy ảo Genymotion) dựa trên framework React-native.
+- 40% : Viết webservice bằng PHP kết hợp với framework Laravel lấy API về xử lý.
+- 45% : Xây dựng hệ thống danh mục các sản phẩm. Tìm kiếm sản phẩm.
+- 50% : Đăng ký mới/ đăng nhập và quản lí thông tin cá nhân.
+- 60% : Đặt hàng và xem đơn hàng đã mua.
+- 65% : Hiển thị danh sách các sản phẩm bán chạy nhất.
+- 75% : Admin đăng nhập vào hệ thống.
+- 80% : Admin quản lý người dùng.
+- 90% : Admin quản lý đơn hàng.
+- 95% : tối ưu hóa code
+-100% : Upload lên Google Play và trải nghiệm như một ứng dụng thật sự.
+
