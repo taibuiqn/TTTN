@@ -28,7 +28,7 @@ CREATE TABLE `bill` (
   `note` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id_bill`),
   KEY `FK_bill_customer` (`id_customer`),
-  CONSTRAINT `FK_bill_customer` FOREIGN KEY (`id_customer`) REFERENCES `customer` (`id_customer`)
+  CONSTRAINT `FK_bill_customer` FOREIGN KEY (`id_customer`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `bill` */
@@ -53,25 +53,6 @@ CREATE TABLE `bill_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `bill_detail` */
-
-/*Table structure for table `customer` */
-
-DROP TABLE IF EXISTS `customer`;
-
-CREATE TABLE `customer` (
-  `id_customer` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `address` text COLLATE utf8_unicode_ci,
-  `phone` char(15) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  PRIMARY KEY (`id_customer`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Data for the table `customer` */
-
-insert  into `customer`(`id_customer`,`name`,`email`,`address`,`phone`,`password`,`created_at`) values (1,'BÙI THỊ TÀI','taibuiqn@gmail.com','2/7C Đường 106, Tăng Nhơn Phú A, Quận 9, HCM','0967439321','taibui','2018-07-14 21:49:35'),(2,'LÊ THỊ THẢO','thaole#gmail.com','56/7 Trường Chinh, Gò Vấp, HCM','0987454567','thaole','2018-07-14 21:56:45');
 
 /*Table structure for table `image` */
 
@@ -116,12 +97,31 @@ DROP TABLE IF EXISTS `product_type`;
 CREATE TABLE `product_type` (
   `id_type` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `image` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id_type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `product_type` */
 
-insert  into `product_type`(`id_type`,`name`) values (1,'BONG TAI'),(2,'Dây chuyền'),(3,'Nhẫn'),(4,'Đồng hồ'),(5,'Vòng tay');
+insert  into `product_type`(`id_type`,`name`,`image`) values (1,'BONG TAI','bongtai.jpg'),(2,'Dây chuyền','daychuyen.jpg'),(3,'Nhẫn','nhan.jpg'),(4,'Đồng hồ','dongho.jpg'),(5,'Vòng tay','vongtay.jpg');
+
+/*Table structure for table `user` */
+
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` text COLLATE utf8_unicode_ci,
+  `phone` char(15) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `user` */
+
+insert  into `user`(`id`,`name`,`email`,`address`,`phone`,`password`) values (1,'BÙI THỊ TÀI','taibuiqn@gmail.com','2/7C Đường 106, Tăng Nhơn Phú A, Quận 9, HCM','0967439321','taibui'),(2,'LÊ THỊ THẢO','thaole#gmail.com','56/7 Trường Chinh, Gò Vấp, HCM','0987454567','thaole');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
