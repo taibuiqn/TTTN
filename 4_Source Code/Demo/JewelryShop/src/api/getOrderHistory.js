@@ -1,5 +1,5 @@
 const getOrderHistory = (token) => (
-    fetch('http://192.168.1.106:8080/JewelryShop/order_history.php',
+    fetch('http://192.168.1.101:8080/JewelryShop/order_history.php',
     {   
         method: 'POST',
         headers: {

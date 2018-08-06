@@ -1,7 +1,7 @@
 const sendOrder = (token, arrayDetail) => {
     const data = { token, arrayDetail };
     console.log(data);
-    return fetch('http://192.168.1.106:8080/JewelryShop/cart.php',
+    return fetch('http://192.168.1.101:8080/JewelryShop/cart.php',
     {   
         method: 'POST',
         headers: {

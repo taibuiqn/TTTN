@@ -5,7 +5,7 @@ import dh1 from '../../../../images/imageJewelry/dh1.png';
 import vt3 from '../../../../images/imageJewelry/vt3.png';
 import global from '../../../global';
 
-const url = 'http://192.168.1.106:8080/JewelryShop/images/product/';
+const url = 'http://192.168.1.101:8080/JewelryShop/images/product/';
 
 function toTitleCase(str) {
     return str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());

@@ -6,7 +6,7 @@ import {
 import global from '../../../global';
 import sendOrder from '../../../../api/sendOrder';
 import getToken from '../../../../api/getToken';
-const url= 'http://192.168.1.106:8080/JewelryShop/images/product/';
+const url= 'http://192.168.1.101:8080/JewelryShop/images/product/';
 
 function toTitleCase(str) {
     return str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
@@ -34,8 +34,9 @@ export default class CartView extends Component {
                 quantity: e.quantity 
             }));
             const kq = await sendOrder(token, arrayDetail);
-            if (kq === 'THEM_THANH_CONG') {
+            if (kq === 'THEM_THANH_CONG') {      
                 console.log('THEM THANH CONG');
+                total = " ";
             } else {
                 console.log('THEM THAT BAI', kq);
             }

@@ -3,7 +3,7 @@ import { View, Text, Image, ImageBackground, StyleSheet, Dimensions, TouchableOp
 import Swiper from 'react-native-swiper';
 
 const { width, height } = Dimensions.get('window');
-const url= 'http://192.168.1.106:8080/JewelryShop/images/type/';
+const url= 'http://192.168.1.101:8080/JewelryShop/images/type/';
 
 export default class Category extends Component {
 

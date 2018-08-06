@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity, ListView } from 'react-native';
 
-const url= 'http://192.168.1.106:8080/JewelryShop/images/product/';
+const url= 'http://192.168.1.101:8080/JewelryShop/images/product/';
 
 export default class TopProduct extends Component {
 

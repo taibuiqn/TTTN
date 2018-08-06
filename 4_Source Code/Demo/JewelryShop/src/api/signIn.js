@@ -1,5 +1,5 @@
 const signIn = (email, password) => (
-    fetch('http://192.168.1.106:8080/JewelryShop/login.php',
+    fetch('http://192.168.1.101:8080/JewelryShop/login.php',
     {   
         method: 'POST',
         headers: {

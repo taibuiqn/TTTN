@@ -11,6 +11,7 @@
     "react-native": "0.55",
     "react-native-deprecated-custom-components": "git+https://github.com/facebookarchive/react-native-custom-components.git",
     "react-native-drawer": "^2.5.0",
+    "react-native-maps": "^0.21.0",
     "react-native-navigator": "^0.4.2",
     "react-native-swiper": "^1.5.13",
     "react-native-tab-navigator": "^0.3.4"
